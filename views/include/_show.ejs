@@ -1,0 +1,20 @@
+<!-- Display all the customer's data in the table ------------------>
+<% for(var i = 0; i < users.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= users[i].name %></td>
+        <td><%= users[i].product %></td>
+        <td><%= users[i].mobile %></td>
+        <td><%= users[i].price %></td>
+        <td><%= users[i].status %></td>
+        <td>
+            <!-- Icons used for Updating and Deleting customer's data----------->
+            <a href="/update-user?id=<%= users[i]._id%>" class="update">
+                <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class=" delete" data-id=<%= users[i]._id%> >
+                <span class="icon"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>

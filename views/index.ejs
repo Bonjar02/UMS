@@ -1,0 +1,32 @@
+<!-- include header -->
+<%- include('include/_header') %>
+
+<!----------- Index Body -------------->
+<div class="container">
+    <a href="/add-user" class="border-shadow">
+        <span class="goto_link"><Span class="spa">Add </Span> New  Customer <i class="fas fa-user"></i></span>
+    </a>
+
+    <!-- Header rows for table -->
+    <form action="/" method="POST">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Product</th>
+                    <th>Mobile no.</th>
+                    <th>Price (in Rs)</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%- include('include/_show') %>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<!-- include footer -->
+<%- include('include/_footer') %>

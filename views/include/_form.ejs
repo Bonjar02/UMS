@@ -1,0 +1,43 @@
+<!-- form handling -->
+<form class="form" action="/api/users" method="POST" id="add_user">
+    <h3>Customer <span class="spa">'s</span> Details</h3>
+    <div class="form_group">
+        <hr>
+        <input type="radio" id="radio1" name="status" value="paid" >
+        <label for="radio1" class="radio-label">Paid</label>
+    
+        <input type="radio" id="radio2" name="status" value="cod" >
+        <label for="radio2" class="radio-label">Cash On Delivery</label>
+        <hr>
+    </div>
+    <div class="form_group"> 
+        <label for="name" >Name</label>
+        <input type="hidden" name="id" value="">
+        <input type="text" name="name" value="">
+    </div>
+    <div class="form_group">
+        <label for="Product" >Product</label>
+        <input type="text" name="product" value="">
+    </div>
+    <div class="form_group">
+    <label for="Mobile no.">Mobile no.</label>
+    <input type="number" name="mobile" value="">
+    </div>
+    <div class="form_group">
+        <label for="Price">Price</label>
+        <input type="number" name="price" value="">
+    </div>
+    <div class="form_group">
+        <button type="submit" class="btn">Save</button>
+    </div>           
+</form>
+
+<!-- For Background Image -->
+<style>
+    body{
+        background-image: url(../img/shoe.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+</style>

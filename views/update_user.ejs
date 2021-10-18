@@ -1,0 +1,53 @@
+<!-- include header -->
+<%- include('include/_header') %>
+
+<div class="container">
+    <a class="goto_link" href="/"><i class="fas fa-angle-double-left"></i> Customer's Table</a>
+</div>
+ 
+<!-- -----------  Update Form --------------->
+<form class="form" method="POST" id="update_user">
+    <h3>Customer <span class="spa">'s</span> Details</h3>
+    <div class="form-group">
+        <hr>            
+        <input type="radio" id="radio-4" name="status" value="paid" <%= user.status == 'paid' ? 'checked' : '' %> >
+        <label for="radio-4" class="radio-label">Paid</label>
+    
+        <input type="radio" id="radio-5" name="status" value="cod" <%= user.status == 'cod' ? 'checked' : '' %> >
+        <label for="radio-5" class="radio-label">Cash On Deliver</label>
+    </div>
+    <hr>
+    <div class="form_group">
+        <label for="name" >Name</label>
+        <input type="hidden" name="id" value="<%= user._id %>">
+        <input type="text" name="name" value="<%= user.name %>" >
+    </div>
+    <div class="form_group">
+        <label for="Product">Product</label>
+        <input type="text" name="product" value="<%= user.product%>" >
+    </div>
+    <div class="form_group">
+        <label for="Mobile no." >Mobile no.</label>
+        <input type="number" name="mobile" value="<%= user.mobile%>" >
+    </div>
+    <div class="form_group">
+        <label for="Price">Price</label>
+        <input type="number" name="price" value="<%= user.price%>" >
+    </div>
+    <div class="form_group">
+        <button type="submit" class="btn">Save</button>
+    </div>
+</form>
+<!-- include footer -->
+<%- include('include/_footer') %>
+
+
+<!-- For Background Image -->
+<style>
+    body{
+        background-image: url(../img/sale2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+</style>
