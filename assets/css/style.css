@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    background-color:	#a9ba9d;
+}
+/* ------------- Header -----------------*/
+.header{
+    font-size: 2em;
+    color: black;
+    background-color: mediumseagreen;
+    text-align: center;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    font-weight: 500;
+}
+h3{
+  text-align: center;
+  color: whitesmoke;
+  background-color: mediumseagreen;
+  padding: 1em;
+  border-radius: 0.2em;
+}
+.spa {
+    color:red;
+}
+/* ------------ Goto Page Links -----------*/
+.goto_link{
+  background-color: #525252;
+  color: white;
+  border: yellow solid 1px;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: auto;
+  letter-spacing: 0.1em;
+  border-radius: 0.3em;
+  padding: 0.5em;
+}
+/* -------------- Table ------------------*/
+.table{
+    font-family: sans-serif;
+    color: black;
+    margin: 2em 1em 0 14em;
+    border-collapse: collapse;
+    width: 75%;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px 	#4a4a4a;
+}
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+.table tr:nth-child(odd){background-color: #b2ffff;}
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+.icon{
+  color: green;
+  padding: 1em;
+}
+.icon :hover{
+  color:red;
+}
+/* ------------ Form ---------------------*/
+.form{
+  background-color:#525252;
+  color: white;
+  font-size: 1.2em;
+  margin:3em 0 1em 2em;
+  width: 25%;
+  padding: 0.2em 1em 2em 1em;
+  border-radius: 0.3em;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px lightsteelblue;
+}
+
+input[type=radio] {
+  width: 15%;
+  height: 2em;
+}
+.form_group{
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.form_group label{
+  padding: 0.5em;
+}
+.form_group input[type=text],
+input[type=number]{
+  width: 60%;
+  padding: 0.5em;
+  float: right;
+  border-radius: 0.2em;
+  border: solid black 1px;
+}
+.radio-label{
+  font-weight: 300;
+  font-size: 1em;
+}
+.btn{
+  background-color: mediumseagreen;
+  padding: 0.4em;
+  float: right;
+  color:whitesmoke;
+  padding: 0.4em;
+  font-size: 1em;
+  font-weight: 100;
+  width: 100%;
+}
+.btn:hover{
+  color: yellow;
+  background-color: black;
+}
+
